@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY event "http://www.spi.com/event.owl#" >
+    <!ENTITY system "http://www.spi.com/system.owl#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY workflow "http://www.spi.com/workflow.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY economicobject "http://www.spi.com/economicobject.owl#" >
+    <!ENTITY businesspartner "http://www.spi.com/businesspartner.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:system="http://www.spi.com/system.owl#"
+     xmlns:event="http://www.spi.com/event.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:economicobject="http://www.spi.com/economicobject.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:workflow="http://www.spi.com/workflow.owl#"
+     xmlns:businesspartner="http://www.spi.com/businesspartner.owl#">
+    <Ontology rdf:about="http://www.spi.com/event.owl">
+        <rdfs:comment>An event ontology</rdfs:comment>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/businesspartner.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/economicobject.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/system.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/workflow.rdf"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.spi.com/event.owl#belongsToParticipant -->
+
+    <ObjectProperty rdf:about="&event;belongsToParticipant">
+        <rdfs:domain rdf:resource="&system;Account"/>
+        <rdfs:range rdf:resource="&workflow;Participant"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#causedBy -->
+
+    <ObjectProperty rdf:about="&event;causedBy">
+        <rdfs:range rdf:resource="&event;Event"/>
+        <rdfs:domain rdf:resource="&event;Event"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#definedByActivity -->
+
+    <ObjectProperty rdf:about="&event;definedByActivity">
+        <rdfs:domain rdf:resource="&event;ActivityInstance"/>
+        <rdfs:range rdf:resource="&workflow;Activity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#definedByWorkflow -->
+
+    <ObjectProperty rdf:about="&event;definedByWorkflow">
+        <rdfs:domain rdf:resource="&event;WorkflowInstance"/>
+        <rdfs:range rdf:resource="&workflow;Workflow"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#generatedBySystem -->
+
+    <ObjectProperty rdf:about="&event;generatedBySystem">
+        <rdfs:domain rdf:resource="&event;WorkflowInstance"/>
+        <rdfs:range rdf:resource="&system;System"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#hasBusinessPartnerContext -->
+
+    <ObjectProperty rdf:about="&event;hasBusinessPartnerContext">
+        <rdfs:range rdf:resource="&businesspartner;AutonomousAgent"/>
+        <rdfs:domain rdf:resource="&event;WorkflowInstance"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#hasEconomicObjectContext -->
+
+    <ObjectProperty rdf:about="&event;hasEconomicObjectContext">
+        <rdfs:range rdf:resource="&economicobject;EconomicObject"/>
+        <rdfs:domain rdf:resource="&event;WorkflowInstance"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#importedFromSystem -->
+
+    <ObjectProperty rdf:about="&event;importedFromSystem">
+        <rdfs:range rdf:resource="&system;System"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#originatedFromActivityInstance -->
+
+    <ObjectProperty rdf:about="&event;originatedFromActivityInstance">
+        <rdfs:range rdf:resource="&event;ActivityInstance"/>
+        <rdfs:domain rdf:resource="&event;Event"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#originatedFromWorkflowInstance -->
+
+    <ObjectProperty rdf:about="&event;originatedFromWorkflowInstance">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&event;WorkflowInstance"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#partOfWorkflowInstance -->
+
+    <ObjectProperty rdf:about="&event;partOfWorkflowInstance">
+        <rdfs:domain rdf:resource="&event;ActivityInstance"/>
+        <rdfs:range rdf:resource="&event;WorkflowInstance"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#precededBy -->
+
+    <ObjectProperty rdf:about="&event;precededBy">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:range rdf:resource="&event;Event"/>
+        <rdfs:domain rdf:resource="&event;Event"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#producedByAccount -->
+
+    <ObjectProperty rdf:about="&event;producedByAccount">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&system;Account"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#producedByApplication -->
+
+    <ObjectProperty rdf:about="&event;producedByApplication">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&workflow;Application"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#producedByParticipant -->
+
+    <ObjectProperty rdf:about="&event;producedByParticipant">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&workflow;Participant"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#succeededBy -->
+
+    <ObjectProperty rdf:about="&event;succeededBy">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&event;Event"/>
+        <inverseOf rdf:resource="&event;precededBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dl.dropboxusercontent.com/u/983997/ontologies/context/businesspartner.owl#hasFirstName -->
+
+    <DatatypeProperty rdf:about="http://dl.dropboxusercontent.com/u/983997/ontologies/context/businesspartner.owl#hasFirstName"/>
+    
+
+
+    <!-- http://dl.dropboxusercontent.com/u/983997/ontologies/context/businesspartner.owl#hasLastName -->
+
+    <DatatypeProperty rdf:about="http://dl.dropboxusercontent.com/u/983997/ontologies/context/businesspartner.owl#hasLastName"/>
+    
+
+
+    <!-- http://www.spi.com/event.owl#hasDescription -->
+
+    <DatatypeProperty rdf:about="&event;hasDescription">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#hasTimeMilli -->
+
+    <DatatypeProperty rdf:about="&event;hasTimeMilli">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.spi.com/event.owl#hasTimeString -->
+
+    <DatatypeProperty rdf:about="&event;hasTimeString">
+        <rdfs:domain rdf:resource="&event;Event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.spi.com/event.owl#AbortedEvent -->
+
+    <Class rdf:about="&event;AbortedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Cancelled.Aborted</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;CancelledEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#ActivityInstance -->
+
+    <Class rdf:about="&event;ActivityInstance"/>
+    
+
+
+    <!-- http://www.spi.com/event.owl#AssignedEvent -->
+
+    <Class rdf:about="&event;AssignedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open.NotRunning.Assigned</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;NotRunningEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#CancelledEvent -->
+
+    <Class rdf:about="&event;CancelledEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Cancelled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;ClosedEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#ClosedEvent -->
+
+    <Class rdf:about="&event;ClosedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;Event"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#CompletedEvent -->
+
+    <Class rdf:about="&event;CompletedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Completed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;ClosedEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#Event -->
+
+    <Class rdf:about="&event;Event"/>
+    
+
+
+    <!-- http://www.spi.com/event.owl#FailedEvent -->
+
+    <Class rdf:about="&event;FailedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Completed.Failed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;CompletedEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#InitialEvent -->
+
+    <Class rdf:about="&event;InitialEvent">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&event;Event"/>
+                    <Class>
+                        <complementOf>
+                            <Restriction>
+                                <onProperty rdf:resource="&event;precededBy"/>
+                                <someValuesFrom rdf:resource="&event;Event"/>
+                            </Restriction>
+                        </complementOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#NotRunningEvent -->
+
+    <Class rdf:about="&event;NotRunningEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open.NotRunning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;OpenEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#OpenEvent -->
+
+    <Class rdf:about="&event;OpenEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;Event"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#ReadyEvent -->
+
+    <Class rdf:about="&event;ReadyEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open.NotRunning.Ready</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;NotRunningEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#RunningEvent -->
+
+    <Class rdf:about="&event;RunningEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open.Running</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;OpenEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#SuccessEvent -->
+
+    <Class rdf:about="&event;SuccessEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Completed.Success</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;CompletedEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#SuspendedEvent -->
+
+    <Class rdf:about="&event;SuspendedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Open.NotRunning.Suspended</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;NotRunningEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#TerminatedEvent -->
+
+    <Class rdf:about="&event;TerminatedEvent">
+        <rdfs:label rdf:datatype="&xsd;string">Closed.Cancelled.Terminated</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&event;CancelledEvent"/>
+    </Class>
+    
+
+
+    <!-- http://www.spi.com/event.owl#WorkflowInstance -->
+
+    <Class rdf:about="&event;WorkflowInstance"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
