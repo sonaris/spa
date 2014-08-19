@@ -1,0 +1,828 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.spi.com/businesspartner.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.spi.com/economicobject.owl#"
+    xmlns:j.2="http://www.spi.com/event.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.3="http://www.spi.com/system.owl#"
+    xmlns:j.4="http://www.spi.com/workflow.owl#" > 
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowInstance8">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#WorkflowInstance"/>
+    <j.2:definedByWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.2:hasBusinessPartnerContext rdf:resource="http://www.stardust.com/model.rdf#BusinessPartner5"/>
+    <j.2:generatedBySystem rdf:resource="http://www.stardust.com/model.rdf#System1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject10"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity4">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.4:hasActivityName>Provide Solution</j.4:hasActivityName>
+    <j.4:precededByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject6">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Complaint"/>
+    <j.1:hasComplaintReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</j.1:hasComplaintReferenceNumber>
+    <j.1:hasComplaintDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</j.1:hasComplaintDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent2">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance7"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921676059</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent1"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent1"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Workflow2">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Workflow"/>
+    <j.4:hasWorkflowName>Complaint Handling</j.4:hasWorkflowName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent11">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance11"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921748099</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent10"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent10"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Transition3">
+    <j.4:hasTransitionCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EconomicObject$Complaint.AnalysisResult == "N"</j.4:hasTransitionCondition>
+    <j.4:hasTargetActivity rdf:resource="http://www.stardust.com/model.rdf#Activity5"/>
+    <j.4:hasSourceActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Transition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent51">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance23"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922046161</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent50"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent50"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent19">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance15"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921803357</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent18"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent18"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance15">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent7">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921750112</j.2:hasTimeMilli>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent35">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance12"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921897173</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent23">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance17"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921854389</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent47">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#SuspendedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance8"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922041095</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent46"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent46"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowInstance7">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#WorkflowInstance"/>
+    <j.2:definedByWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.2:hasBusinessPartnerContext rdf:resource="http://www.stardust.com/model.rdf#BusinessPartner4"/>
+    <j.2:generatedBySystem rdf:resource="http://www.stardust.com/model.rdf#System1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject8"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent59">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance25"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922059772</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent58"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent58"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity5">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.4:hasActivityName>Notify Customer</j.4:hasActivityName>
+    <j.4:precededByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent9">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance11"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921728432</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent10">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921858602</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent9"/>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject5">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Order"/>
+    <j.1:hasOrderReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</j.1:hasOrderReferenceNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent1">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance7"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921676003</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Participant1">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#RoleParticipant"/>
+    <j.4:hasParticipantName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administrator</j.4:hasParticipantName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent22">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance16"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921854365</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent21"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent21"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent10">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance11"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921728471</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent9"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent9"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent50">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance23"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922046153</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Transition4">
+    <j.4:hasTransitionCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.4:hasTransitionCondition>
+    <j.4:hasTargetActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.4:hasSourceActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Transition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance14">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent18">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance15"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921771644</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent17"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent17"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance26">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#System1">
+    <rdf:type rdf:resource="http://www.spi.com/system.owl#BPMSystem"/>
+    <j.3:hasSystemName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stardust 1</j.3:hasSystemName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent34">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance20"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921868571</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent33"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent46">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance8"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922034537</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowInstance6">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#WorkflowInstance"/>
+    <j.2:definedByWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.2:hasBusinessPartnerContext rdf:resource="http://www.stardust.com/model.rdf#BusinessPartner3"/>
+    <j.2:generatedBySystem rdf:resource="http://www.stardust.com/model.rdf#System1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject6"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent58">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance25"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922058019</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent57"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent57"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent6">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921999941</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent5"/>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity6">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.4:hasActivityName>File Case</j.4:hasActivityName>
+    <j.4:precededByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity5"/>
+    <j.4:precededByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#BusinessPartner1">
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Person"/>
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Customer"/>
+    <j.0:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adam.williams@domain.com</j.0:hasEmailAddress>
+    <j.0:hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams</j.0:hasLastName>
+    <j.0:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam</j.0:hasFirstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance8">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Account1">
+    <rdf:type rdf:resource="http://www.spi.com/system.owl#Account"/>
+    <j.3:hasAccountUserName>motu</j.3:hasAccountUserName>
+    <j.2:belongsToParticipant rdf:resource="http://www.stardust.com/model.rdf#Participant1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject4">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Complaint"/>
+    <j.1:hasComplaintReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</j.1:hasComplaintReferenceNumber>
+    <j.1:hasComplaintDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</j.1:hasComplaintDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Transition5">
+    <j.4:hasTransitionCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.4:hasTransitionCondition>
+    <j.4:hasTargetActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.4:hasSourceActivity rdf:resource="http://www.stardust.com/model.rdf#Activity5"/>
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Transition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent33">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance20"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921868567</j.2:hasTimeMilli>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent21">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance16"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921822649</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent20"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent20"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent8">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance10"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921725526</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent61">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance26"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922059788</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent60"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent60"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent17">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance15"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921771597</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance25">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity5"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance13">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent29">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance14"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921866983</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent28"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent28"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent45">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#SuspendedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance10"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922033360</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent44"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent44"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent57">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance25"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922058012</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent5">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921728399</j.2:hasTimeMilli>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject3">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Order"/>
+    <j.1:hasOrderReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</j.1:hasOrderReferenceNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance9">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent20">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance16"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921803369</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent44">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance10"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922023604</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent32">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance19"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921868559</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent31"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent31"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent60">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance26"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922059784</j.2:hasTimeMilli>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance12">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent7">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance9"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921725517</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent6"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent6"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent28">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance14"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921861540</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent16">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance14"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921766709</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent4">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922047549</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent3"/>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance24">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent56">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance8"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922058001</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent55"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent55"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Account3">
+    <rdf:type rdf:resource="http://www.spi.com/system.owl#Account"/>
+    <j.3:hasAccountUserName>analyst1</j.3:hasAccountUserName>
+    <j.2:belongsToParticipant rdf:resource="http://www.stardust.com/model.rdf#Participant4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#BusinessPartner3">
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Person"/>
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Customer"/>
+    <j.0:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">randy.callahan@domain.com</j.0:hasEmailAddress>
+    <j.0:hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Callahan</j.0:hasLastName>
+    <j.0:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randy</j.0:hasFirstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject2">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Complaint"/>
+    <j.1:hasComplaintReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</j.1:hasComplaintReferenceNumber>
+    <j.1:hasComplaintDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</j.1:hasComplaintDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent31">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance19"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921867001</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent30"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent30"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Participant4">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#RoleParticipant"/>
+    <j.4:hasParticipantName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyst</j.4:hasParticipantName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent43">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance22"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921999935</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent42"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent42"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent55">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance8"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922049665</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent6">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance9"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921701152</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent5"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent5"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance23">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance11">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent3">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921701056</j.2:hasTimeMilli>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent39">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance21"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921998626</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent27">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance18"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921858594</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent26"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent26"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent15">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance13"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921766700</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent14"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent14"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance19">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#BusinessPartner2">
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Person"/>
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Customer"/>
+    <j.0:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chris.cornwell@domain.com</j.0:hasEmailAddress>
+    <j.0:hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornwell</j.0:hasLastName>
+    <j.0:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris</j.0:hasFirstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject1">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Order"/>
+    <j.1:hasOrderReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</j.1:hasOrderReferenceNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Account2">
+    <rdf:type rdf:resource="http://www.spi.com/system.owl#Account"/>
+    <j.3:hasAccountUserName>service_agent1</j.3:hasAccountUserName>
+    <j.2:belongsToParticipant rdf:resource="http://www.stardust.com/model.rdf#Participant3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance7">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent30">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance19"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921866995</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent42">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance22"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921999931</j.2:hasTimeMilli>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent54">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance24"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922047543</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent53"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent53"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance10">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent5">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance9"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921701106</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Participant5">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#RoleParticipant"/>
+    <j.4:hasParticipantName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Organization</j.4:hasParticipantName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance22">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent38">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance12"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921998614</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent37"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent37"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent2">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922059791</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent1"/>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance18">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent26">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance18"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921858583</j.2:hasTimeMilli>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent14">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance13"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921750182</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent13"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent13"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#BusinessPartner5">
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Person"/>
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Customer"/>
+    <j.0:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">will.finnegan@domain.com</j.0:hasEmailAddress>
+    <j.0:hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finnegan</j.0:hasLastName>
+    <j.0:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will</j.0:hasFirstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent41">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance21"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921999922</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent40"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent40"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent53">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance24"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922047539</j.2:hasTimeMilli>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent4">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance8"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921697795</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject9">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Order"/>
+    <j.1:hasOrderReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</j.1:hasOrderReferenceNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Participant2">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#RoleParticipant"/>
+    <j.4:hasParticipantName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Case Performer</j.4:hasParticipantName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Transition1">
+    <j.4:hasTransitionCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.4:hasTransitionCondition>
+    <j.4:hasTargetActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.4:hasSourceActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Transition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance21">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject10">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Complaint"/>
+    <j.1:hasComplaintReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</j.1:hasComplaintReferenceNumber>
+    <j.1:hasComplaintDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</j.1:hasComplaintDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity1">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow1"/>
+    <j.4:hasActivityName>Default Case Activity</j.4:hasActivityName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent49">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance10"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922046142</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent48"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent48"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent1">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921675897</j.2:hasTimeMilli>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent13">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance13"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921750147</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance17">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowInstance5">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#WorkflowInstance"/>
+    <j.2:definedByWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.2:hasBusinessPartnerContext rdf:resource="http://www.stardust.com/model.rdf#BusinessPartner2"/>
+    <j.2:generatedBySystem rdf:resource="http://www.stardust.com/model.rdf#System1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject4"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent37">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance12"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921992804</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent36"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent36"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent25">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance17"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921858571</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent24"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent24"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#BusinessPartner4">
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Person"/>
+    <rdf:type rdf:resource="http://www.spi.com/businesspartner.owl#Customer"/>
+    <j.0:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adam.williams@domain.com</j.0:hasEmailAddress>
+    <j.0:hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams</j.0:hasLastName>
+    <j.0:hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam</j.0:hasFirstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent9">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921771565</j.2:hasTimeMilli>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity3">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.4:hasActivityName>Analyze Case</j.4:hasActivityName>
+    <j.4:precededByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject7">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Order"/>
+    <j.1:hasOrderReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</j.1:hasOrderReferenceNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Participant3">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#RoleParticipant"/>
+    <j.4:hasParticipantName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Agent</j.4:hasParticipantName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent52">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance23"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922047531</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent51"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent51"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Workflow1">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Workflow"/>
+    <j.4:hasWorkflowName>Case Process</j.4:hasWorkflowName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent3">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance7"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921697781</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent2"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent2"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#EconomicObject8">
+    <rdf:type rdf:resource="http://www.spi.com/economicobject.owl#Complaint"/>
+    <j.1:hasComplaintReferenceNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</j.1:hasComplaintReferenceNumber>
+    <j.1:hasComplaintDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</j.1:hasComplaintDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Transition2">
+    <j.4:hasTransitionCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EconomicObject$Complaint.AnalysisResult == "P"</j.4:hasTransitionCondition>
+    <j.4:hasTargetActivity rdf:resource="http://www.stardust.com/model.rdf#Activity4"/>
+    <j.4:hasSourceActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Transition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance20">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity6"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent40">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance21"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921998632</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent39"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent39"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#Activity2">
+    <rdf:type rdf:resource="http://www.spi.com/workflow.owl#Activity"/>
+    <j.4:partOfWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.4:hasActivityName>Create New Case</j.4:hasActivityName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityInstance16">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#ActivityInstance"/>
+    <j.2:definedByActivity rdf:resource="http://www.stardust.com/model.rdf#Activity3"/>
+    <j.2:partOfWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent24">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance17"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921854406</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent23"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent23"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowInstance4">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#WorkflowInstance"/>
+    <j.2:definedByWorkflow rdf:resource="http://www.stardust.com/model.rdf#Workflow2"/>
+    <j.2:hasBusinessPartnerContext rdf:resource="http://www.stardust.com/model.rdf#BusinessPartner1"/>
+    <j.2:generatedBySystem rdf:resource="http://www.stardust.com/model.rdf#System1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject1"/>
+    <j.2:hasEconomicObjectContext rdf:resource="http://www.stardust.com/model.rdf#EconomicObject2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent12">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#AssignedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance12"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921748108</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#WorkflowEvent8">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#CompletedEvent"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921868577</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent7"/>
+    <j.2:originatedFromWorkflowInstance rdf:resource="http://www.stardust.com/model.rdf#WorkflowInstance7"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#WorkflowEvent7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent36">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#SuspendedEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance12"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406921986254</j.2:hasTimeMilli>
+    <j.2:precededBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent35"/>
+    <j.2:causedBy rdf:resource="http://www.stardust.com/model.rdf#ActivityEvent35"/>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.stardust.com/model.rdf#ActivityEvent48">
+    <rdf:type rdf:resource="http://www.spi.com/event.owl#RunningEvent"/>
+    <j.2:originatedFromActivityInstance rdf:resource="http://www.stardust.com/model.rdf#ActivityInstance10"/>
+    <j.2:hasTimeMilli rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1406922042195</j.2:hasTimeMilli>
+    <j.2:producedByAccount rdf:resource="http://www.stardust.com/model.rdf#Account3"/>
+  </rdf:Description>
+</rdf:RDF>
