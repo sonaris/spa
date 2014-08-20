@@ -27,10 +27,10 @@
      xmlns:businesspartner="http://www.spi.com/businesspartner.owl#">
     <Ontology rdf:about="http://www.spi.com/event.owl">
         <rdfs:comment>An event ontology</rdfs:comment>
-        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/businesspartner.rdf"/>
-        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/economicobject.rdf"/>
-        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/system.rdf"/>
-        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/workflow.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/Ontologies/businesspartner.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/Ontologies/economicobject.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/Ontologies/system.rdf"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/sonaris/spi/master/Ontologies/workflow.rdf"/>
     </Ontology>
     
 
